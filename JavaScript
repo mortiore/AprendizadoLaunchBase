@@ -1,0 +1,24 @@
+// Criar um programa que calcula a média
+// das notas entre os alunos e envia
+// mensagem do cálculo da média.
+// usando `` voce cria uma template string onde você consegue colocar uma outra variavel dentro pra aparecer junto.
+//const nome3 = `Fábio e ${nome2} e ${nome}`;
+
+const aluno01 = 'Diego';
+const notaAluno01 = 9.8;
+
+const aluno02 = 'Mayk';
+const notaAluno02 = 10;
+
+const aluno03 = 'Fulano';
+const notaAluno03 = 2;
+
+// se a media for maior que 5 parabenizar a turma
+
+const media = (notaAluno01 + notaAluno02 + notaAluno03)/3;
+
+if(media > 5){
+    console.log(`A media foi de ${media}. Parabéns`)
+}else{
+    console.log('A media é menor que 5')
+}
