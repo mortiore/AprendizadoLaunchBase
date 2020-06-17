@@ -1,0 +1,45 @@
+const usuario = [
+    {
+      nome: "Salvio",
+      receitas: [115.3, 48.7, 98.3, 14.5],
+      despesas: [85.3, 13.5, 19.9]
+    },
+    {
+      nome: "Marcio",
+      receitas: [24.6, 214.3, 45.3],
+      despesas: [185.3, 12.1, 120.0]
+    },
+    {
+      nome: "Lucia",
+      receitas: [9.8, 120.3, 340.2, 45.3],
+      despesas: [450.2, 29.9]
+    }
+  ];
+
+function calculaSaldo(receitas, despesas){ 
+   let somaA = 0;
+   let somaB = 0;
+   let somaFinal = 0;
+    for(let a = 0; a < receitas.length; a++){
+      somaA = somaA + receitas[a];
+    }
+    for(let a = 0; a < despesas.length; a++){
+        somaB = somaB + despesas[a];
+    }
+    somaFinal = somaNumeros(somaA,somaB);
+
+    return somaFinal;
+}
+function somaNumeros(a, b) {
+    let saldo = 0;
+    saldo = a - b;
+    return saldo;
+  }
+for(let a = 0; a < usuario.length; a++){
+    saldo = calculaSaldo(usuario[a].receitas,usuario[a].despesas);
+    if(saldo > 0){
+        console.log(`${usuario[a].nome} possui saldo POSITIVO de ${saldo}`)
+    }else{
+        console.log(`${usuario[a].nome} possui saldo NEGATIVO de ${saldo}`)
+    }
+}
