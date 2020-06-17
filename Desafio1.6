@@ -1,0 +1,30 @@
+const usuario = [
+    {
+        nome: "João", tecnologias: ["PHP", "CSS"]
+    },
+    {
+        nome: "Jorge", tecnologias: ["Ruby","Python"]
+    },
+    {
+        nome: "Fábio", tecnologias: ["PHP", "HTML"]
+    },
+    {
+        nome: "Carlos", tecnologias: ["CSS", "SQL"]
+    }
+]
+
+function checaCSS(usuario){
+    for(let a = 0; a < usuario.tecnologias.length; a++){
+       if(usuario.tecnologias[a] == "CSS"){
+           return true;
+       }
+    }
+}
+
+for(let a = 0; a < usuario.length; a++){
+    const TrabalhaCSS = checaCSS(usuario[a]);
+
+    if(TrabalhaCSS){
+        console.log(`O usuário ${usuario[a].nome} trabalha com CSS`);
+    }
+ }
