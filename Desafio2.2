@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        :root{
+        --color-blue: rgb(113, 89, 193);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        body {                
+            background: #282a36; 
+            font-family: 'Roboto';
+            color: white;               
+            }
+        header{
+            padding: 30px;
+            border-bottom: 1px solid #333;
+            background: rgba(0,0,0,0.4);
+        }
+        footer{
+            padding: 30px 5px;
+            border-top: 1px solid #333;
+            background: rgba(0,0,0,0.4);
+
+        }
+        footer div{
+            margin: 32px auto;
+        }
+        .links{
+        text-align: center;
+        }
+        .links a{
+            color: white;
+            font-size: 18px;
+            line-height: 28px;
+            margin: 0 30px;
+            text-decoration: none;                
+        }
+        .links a:hover{
+            color: var(--color-blue);
+            transition: color 200ms;
+        }
+        .links ul {
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        #wrapper {
+        text-align: center;
+        padding: 28px;
+        }
+
+        #wrapper img {
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 32px;
+            height: 300px;
+        }
+
+        #wrapper h1 {
+            font-size: 50px;
+            line-height: 52px;
+            font-weight: bold;
+        }
+
+        #wrapper h2 {
+            font-size: 20px;
+            line-height: 34px;
+            font-weight: normal;
+            margin-top: 8px;
+            opacity: 0.8;
+        }
+
+        #wrapper p {
+            max-width: 500px;
+            margin: 32px auto;
+            font-size: 24px;
+            line-height: 34px;
+        }
+        #links-footer a {
+        border-bottom: 1px solid var(--color-blue);
+        }
+        
+    </style>
+    <link rel="icon" href="https://raw.githubusercontent.com/Rocketseat/bootcamp-launchbase-desafios-02/master/desafios/favicon.ico" type="image/x-icon" />
+    <head>
+        <title>Desafio RocketSeat</title>
+    </head>
+    <body>
+        <header>
+            <div id="wrapper" class="links">
+                <a href="https://discordapp.com/invite/gCRAFhc">Comunidade</a>
+                <a href="mailto:oi@rocketseat.com.br">Email</a>
+                <a href="tel:+5547992078767">Telefone</a>
+                <a href="/">Sobre</a>
+            </div>
+        </header>
+
+        <div id="wrapper" class="links">
+            <img src="https://scontent.fpoj1-1.fna.fbcdn.net/v/t1.0-9/104169738_687672685112542_1468337677738709328_n.png?_nc_cat=108&_nc_sid=09cbfe&_nc_ohc=HdUkCRfuhqAAX89Sdf2&_nc_ht=scontent.fpoj1-1.fna&oh=c518a6065d02b8fc952ca8bf738627c1&oe=5F185873" alt="/">
+            <h1>RockeatSeat</h1>
+            <h2>Empresa que se importa com a sua comunidade e super atenta ao mercado, com várias dicas para iniciantes e até mesmo para veteranos.</h2>
+        </div>
+
+        <div style="padding-bottom: 25px;"class="links" id="space">
+            <h2 style="padding-bottom: 20px;">Principais tecnologias utilizadas</h2>
+            <ul>
+                <li><p>Html</p></li>
+                <li><p>CSS</p></li>
+                <li><p>PHP</p></li>
+                <li><p>JavaScript</p></li>
+                <li><p>e Outros</p></li>
+            </ul>
+        </div>
+    <footer>
+        <div class="links" id="links-footer">
+            <a href="https://github.com/Rocketseat">GitHub</a>
+            <a href="https://www.instagram.com/rocketseat_oficial/?hl=pt-br">Instagram</a>
+            <a href="https://www.facebook.com/rocketseat/">Facebook</a>
+        </div>
+    </footer>      
+    </body>
+</html>
